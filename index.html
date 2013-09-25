@@ -1,0 +1,116 @@
+<html>
+
+<head>
+  <title>CSIRO Data Visualization Demo</title>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="lib/bootstrap.js"></script>
+  
+  <script src="lib/fits.js"></script>
+  <script src="lib/gl-matrix.min.js"></script>
+  <script src="lib/ruse.js"></script>
+  <script src="lib/volumetric.js"></script>
+  
+  <script src="lib/main.js"></script>
+  
+  <link rel="stylesheet" href="lib/bootstrap.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="lib/main.css" type="text/css" charset="utf-8">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="navbar navbar-default">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Data Visualization Demo</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#" class="demo-link" data-demo="hipass">HIPASS Catalog</a></li>
+          <li><a href="#" class="demo-link" data-demo="eso149-g003.HI-cube">eso149-g003.HI-cube</a></li>
+          <li><a href="#" class="demo-link" data-demo="H005_abcde_luther_chop">H005_abcde_luther_chop</a></li>
+          <li><a href="#" class="demo-link" data-demo="H092_abcde_luther_chop">H092_abcde_luther_chop</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="demo" data-demo="hipass">
+        <h4>The 1000 Brightest HIPASS Galaxies: H I Properties</h4>
+        <select class='x-axis' disabled>
+          <option>ra</option>
+          <option>dec</option>
+          <option>GLON</option>
+          <option>GLAT</option>
+          <option>SPeak</option>
+          <option>e_SPeak</option>
+          <option>FHI</option>
+          <option>e_FHI</option>
+          <option>VSys</option>
+          <option>e_VSys</option>
+          <option>W50</option>
+          <option>W20</option>
+          <option>VLG</option>
+          <option>logM</option>
+        </select>
+        <select class='y-axis' disabled>
+          <option>ra</option>
+          <option>dec</option>
+          <option>GLON</option>
+          <option>GLAT</option>
+          <option>SPeak</option>
+          <option>e_SPeak</option>
+          <option>FHI</option>
+          <option>e_FHI</option>
+          <option>VSys</option>
+          <option>e_VSys</option>
+          <option>W50</option>
+          <option>W20</option>
+          <option>VLG</option>
+          <option>logM</option>
+        </select>
+        <select class='z-axis' disabled>
+          <option>ra</option>
+          <option>dec</option>
+          <option>GLON</option>
+          <option>GLAT</option>
+          <option>SPeak</option>
+          <option>e_SPeak</option>
+          <option>FHI</option>
+          <option>e_FHI</option>
+          <option>VSys</option>
+          <option>e_VSys</option>
+          <option>W50</option>
+          <option>W20</option>
+          <option>VLG</option>
+          <option>logM</option>
+        </select>
+        <div class="ruse" width="800px" height="400px"></div>
+      </div>
+      
+      <div class="demo hide" data-demo="eso149-g003.HI-cube">
+        <h4>eso149-g003.HI-cube</h4>
+        <div class="volume" data-file="eso149-g003.HI-cube"></div>
+      </div>
+      
+      <div class="demo hide" data-demo="H005_abcde_luther_chop">
+        <h4>H005_abcde_luther_chop</h4>
+        <div class="volume" data-file="H005_abcde_luther_chop"></div>
+      </div>
+      
+      <div class="demo hide" data-demo="H092_abcde_luther_chop">
+        <h4>H092_abcde_luther_chop</h4>
+        <div class="volume" data-file="H092_abcde_luther_chop"></div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+
+</html>

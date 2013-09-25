@@ -1,0 +1,5 @@
+.DS_Store
+node_modules/
+lib/main.js
+lib/main.css
+data/
